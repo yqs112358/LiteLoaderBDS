@@ -1,12 +1,12 @@
 ﻿#pragma once
-#include<lbpch.h>
+#include <lbpch.h>
 #include <rapidjson/document.h>
 #include <rapidjson/stringbuffer.h>
 #include <variant>
-#include <stl\viewhelper.h>
-#include <api\types\types.h>
-#include<stl\optional.h>
-#include<vector>
+#include <stl/viewhelper.h>
+#include <api/types/types.h>
+#include <stl/optional.h>
+#include <vector>
 using std::pair,std::vector;
 namespace GUI {
 	using std::variant;

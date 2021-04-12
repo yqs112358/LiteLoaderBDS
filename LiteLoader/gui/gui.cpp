@@ -1,11 +1,11 @@
-﻿#include<lbpch.h>
+﻿#include <lbpch.h>
 #include <api/gui/gui.h>
 #include <rapidjson/writer.h>
-#include<api\refl\playerMap.h>
-#include<stl\varint.h>
-#include<api\myPacket.h>
-#include<mc/Player.h>
-#include<api/Basic_Event.h>
+#include <api/refl/playerMap.h>
+#include <stl/varint.h>
+#include <api/myPacket.h>
+#include <mc/Player.h>
+#include <api/Basic_Event.h>
 namespace GUI {
 	static vector<string> onlineLIST;
 	static string onlineLISTV;

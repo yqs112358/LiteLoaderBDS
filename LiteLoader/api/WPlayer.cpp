@@ -1,11 +1,11 @@
 ﻿#include <lbpch.h>
-#include<api\types\types.h>
-#include<api\myPacket.h>
-#include<stl\varint.h>
-#include<api\refl\playerMap.h>
-#include<mc/Player.h>
-#include<mc/Certificate.h>
-#include<debug\MemSearcher.h>
+#include <api/types/types.h>
+#include <api/myPacket.h>
+#include <stl/varint.h>
+#include <api/refl/playerMap.h>
+#include <mc/Player.h>
+#include <mc/Certificate.h>
+#include <debug/MemSearcher.h>
 
 
 LIAPI void WPlayer::sendText(string text, TextType tp) {

@@ -2,7 +2,7 @@
 struct WPlayer;
 #include <string>
 #include <liteloader.h>
-#include <stl\useful.h>
+#include <stl/useful.h>
 #include <mc/Player.h>
 #include <vector>
 class NetworkIdentifier;

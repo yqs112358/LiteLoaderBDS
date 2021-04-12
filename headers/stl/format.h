@@ -1,8 +1,8 @@
 ﻿#pragma once
-#include<string>
-#include<sstream>
-#include<string_view>
-#include<stl\useful.h>
+#include <string>
+#include <sstream>
+#include <string_view>
+#include <stl/useful.h>
 using std::string,std::string_view;
 inline void __FORMAT(std::string& s,string_view format)
 {

@@ -220,7 +220,6 @@
     <ClInclude Include="..\headers\stl\views.h" />
     <ClInclude Include="..\headers\stl\WorkerPool.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="logger.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RelativeFloat.h" />
     <ClInclude Include="resource.h" />
@@ -293,9 +292,6 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LiteLoader.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

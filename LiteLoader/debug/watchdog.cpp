@@ -1,10 +1,10 @@
-﻿#include<lbpch.h>
-#include<debug/WatchDog.h>
-#include<thread>
-#include<mutex>
-#include<random>
-#include<ctime>
-#include<stl\Logger.h>
+﻿#include <lbpch.h>
+#include <debug/WatchDog.h>
+#include <thread>
+#include <mutex>
+#include <random>
+#include <ctime>
+#include <stl/Logger.h>
 #ifdef TRACING_ENABLED
 void DOG_INIT();
 LIAPI unsigned int DOG_BITE(string&& e);

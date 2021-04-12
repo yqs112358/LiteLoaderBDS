@@ -21,7 +21,6 @@
 //CheckUpdate.cpp
 #include <rapidjson\rapidjson.h>
 #include <rapidjson\document.h>
-#include "logger.h"
 #include<string>
 #include<iostream>
 #endif //PCH_H

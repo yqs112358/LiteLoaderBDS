@@ -20,7 +20,7 @@ namespace liteloader {
 		void* UUID[2];
 		ServerLevel* lvl;
 		string Name;
-		uchar Perm;
+		unsigned char Perm;
 		static void* fake_vtbl[26];
 		SCO() {
 #if 0

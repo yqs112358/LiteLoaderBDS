@@ -3,7 +3,9 @@
 extern Logger<stdio_commit> LOG;
 extern void PrintErrorMessage();
 
-static void addPluginsLibDir() {
+static void AddPluginsLibDir() {
+	std::filesystem::create_directory("plugins");
+
 	WCHAR* buffer = new WCHAR[8192];
 	auto sz = GetEnvironmentVariableW(TEXT("PATH"), buffer, 8192);
 	std::wstring PATH{ buffer, sz };
@@ -13,7 +15,7 @@ static void addPluginsLibDir() {
 	delete[] buffer;
 }
 
-std::vector<std::wstring> getPreloadList()
+std::vector<std::wstring> GetPreloadList()
 {
 	std::vector<std::wstring> preloadList{};
 
@@ -40,15 +42,16 @@ std::vector<std::wstring> getPreloadList()
 	return preloadList;
 }
 
-void loadPlugins() {
-	static std::vector<std::pair<std::wstring, HMODULE>> libs;
-	addPluginsLibDir();
-	std::filesystem::create_directory("plugins");
-	std::filesystem::directory_iterator ent("plugins");
-	short plugins = 0;
-	std::vector<std::wstring> preloadList = getPreloadList();
-
+void LoadPlugins()
+{
+	AddPluginsLibDir();
+	
 	LOG("Loading plugins");
+	static std::vector<std::pair<std::wstring, HMODULE>> libs;
+	std::filesystem::directory_iterator ent("plugins");
+	std::vector<std::wstring> preloadList = GetPreloadList();
+	
+	int plugins = 0;
 	for (auto& i : ent) {
 		if (i.is_regular_file() && i.path().extension().u8string() == ".dll") {
 			bool loaded = false;
