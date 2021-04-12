@@ -332,6 +332,12 @@
     <ClCompile Include="UpdateChecker.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LoadPlugins.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsFunc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\lib\detours.lib" />
